@@ -26,10 +26,7 @@ public class Script {
                 StringBuilder sb = new StringBuilder();
                 while((line = br.readLine()) !=null){
                     String b[] = line.split(splitBy);
-                    sb.append(b[1]);
-                    sb.append(',');
-                    sb.append(b[3]);
-                    sb.append('\n');
+                    sb.append(b[1]);sb.append(',');sb.append(b[3]);sb.append('\n');
                 }
                 br.close();
                 System.out.println("[Procesd File Succesfully]:"+child);
